@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Signature</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+        * {
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        #main_box {
+            width: 100%;
+            height: 250px;
+            background-color: rgb(43, 220, 226);
+            max-width: 580px;
+            padding: 10px;
+        }
+
+        .container {
+            width: 100%;
+            height: 250px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            vertical-align: middle;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box1 {
+            width: 100%;
+
+        }
+
+        .profile_image_box {
+            width: 150px;
+            height: 150px;
+         
+            position: relative;
+            margin: auto;
+        }
+
+        .profile_image_box img {
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            border-radius: 50%;
+            margin: auto;
+
+        }
+
+        .content_box {
+            width: 100%;
+            height: 250px;
+        }
+
+        .content_box p:nth-child(1) {
+            font-size: 1.5rem;
+            margin: 3px;
+            padding-left: 40px;
+        }
+
+        .content_box p:nth-child(2) {
+            font-size: 1rem;
+            margin: 3px;
+            padding-left: 40px;
+        }
+
+
+
+        .boxes {
+            width: 90%;
+            display: flex;
+            padding: 10px 10px;
+            justify-content: left;
+            align-items: center;
+        }
+
+        .sub_boxes {
+            width: 100%;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            margin: 25px 5px;
+            height: 20px;
+        }
+
+        .sub_boxes img {
+            width: 40px;
+            margin: 10px;
+        }
+
+        .sub_boxes span a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .col_3 {
+            width: 100%;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            margin: 5px;
+            padding-left: 15px;
+            height: 20px;
+        }
+
+        .col_3 img {
+            width: 40px;
+            margin: 10px;
+        }
+
+
+        @media only screen and (max-width: 430px) {
+            .container {
+                height: auto;
+                grid-template-columns: auto;
+
+            }
+
+            #main_box {
+                height: auto;
+            }
+
+            .boxes {
+                flex-direction: column;
+
+            }
+
+            .content_box {
+                width: 100%;
+                height: auto;
+                text-align: center;
+            }
+
+            .content_box p:nth-child(1) {
+            
+                margin: auto;
+                padding-left: 5px;
+                padding-right: 5px;
+               
+            }
+            .content_box p:nth-child(2) {
+            
+                margin: auto;
+                padding-left: 5px;
+                padding-right: 5px;
+               
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <table id="main_box">
+        <tbody>
+            <tr>
+                <td>
+                    <div class="container">
+                        <div class="box1">
+                            <div class="profile_image_box">
+                                <img src="headshot.jpg" alt="Image">
+                            </div>
+                        </div>
+
+
+                        <div class="content_box">
+                            <p>Jess Goat</p>
+                            <p>Web Developer</p>
+
+                            <div class="boxes">
+                                <div class="col_1 sub_boxes">
+                                    <img src="https://img.icons8.com/fluency/48/000000/mail.png" />
+                                    <span><a href="mailto:abc@gmail.com">abc@gmail.com</a></span>
+                                </div>
+                                <div class="col_2 sub_boxes">
+                                    <img
+                                        src="https://img.icons8.com/external-justicon-lineal-justicon/64/000000/external-phone-call-notifications-justicon-lineal-justicon.png" />
+                                    <span><a href="mailto:abc@gmail.com">abc@gmail.com</a></span>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col_3">
+                                    <img src="https://img.icons8.com/color/64/000000/address.png" />
+                                    <span>3064 Clair StreetWaco, TX 76706</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
